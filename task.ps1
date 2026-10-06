@@ -1,4 +1,4 @@
-$disks = Get-AzDisk
+$disks = Get-AzDisk -ResourceGroupName "mate-azure-task-5"
 
 $unattachedDisks = $disks | Where-Object {
     $null -eq $_.ManagedBy
